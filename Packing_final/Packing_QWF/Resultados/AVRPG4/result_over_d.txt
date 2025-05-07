@@ -1,0 +1,93 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {1};
+		\draw[fill=gray!78.873239](8.800000,59.394267)  circle (8.800000);
+		\node at (8.800000,59.394267) {2};
+		\draw[fill=gray!95.774648](14.207139,73.600000)  circle (6.400000);
+		\node at (14.207139,73.600000) {3};
+		\draw[fill=gray!95.774648](2.400000,2.400000)  circle (2.400000);
+		\node at (2.400000,2.400000) {4};
+		\draw[fill=gray!63.380282](25.292264,75.200000)  circle (4.800000);
+		\node at (25.292264,75.200000) {5};
+		\draw[fill=gray!67.605634](4.000000,71.260185)  circle (4.000000);
+		\node at (4.000000,71.260185) {6};
+		\draw[fill=gray!49.295775](1.600000,14.613440)  circle (1.600000);
+		\node at (1.600000,14.613440) {7};
+		\draw[fill=gray!5.633803](37.685811,72.000000)  circle (8.000000);
+		\node at (37.685811,72.000000) {8};
+		\draw[fill=gray!32.394366](25.292260,63.200000)  circle (7.200000);
+		\node at (25.292260,63.200000) {9};
+		\draw[fill=gray!19.718310](41.252560,58.876040)  circle (5.600000);
+		\node at (41.252560,58.876040) {10};
+		\draw[fill=gray!5.633803](3.200000,9.068545)  circle (3.200000);
+		\node at (3.200000,9.068545) {11};
+		\draw[fill=gray!28.169014](1.600000,41.386560)  circle (1.600000);
+		\node at (1.600000,41.386560) {12};
+		\draw[fill=gray!19.718310](1.600000,44.586560)  circle (1.600000);
+		\node at (1.600000,44.586560) {13};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {14};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](27.200000,27.200000)  circle (27.200000);
+		\node at (27.200000,27.200000) {15};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](25.600000,25.600000)  circle (25.600000);
+		\node at (25.600000,25.600000) {16};
+		\draw[fill=gray!38.596491](57.600000,59.200000)  circle (20.800000);
+		\node at (57.600000,59.200000) {17};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](23.200000,23.200000)  circle (23.200000);
+		\node at (23.200000,23.200000) {18};
+		\draw[fill=gray!71.428571](56.800000,56.800000)  circle (23.200000);
+		\node at (56.800000,56.800000) {19};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](29.600000,29.600000)  circle (29.600000);
+		\node at (29.600000,29.600000) {20};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {21};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](27.200000,27.200000)  circle (27.200000);
+		\node at (27.200000,27.200000) {22};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](22.400000,22.400000)  circle (22.400000);
+		\node at (22.400000,22.400000) {23};
+		\draw[fill=gray!59.459459](54.400000,56.000000)  circle (24.000000);
+		\node at (54.400000,56.000000) {24};
+	\end{scope}
+\end{tikzpicture}

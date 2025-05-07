@@ -1,0 +1,93 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {1};
+		\draw[fill=gray!95.774648](6.400000,54.773121)  circle (6.400000);
+		\node at (6.400000,54.773121) {2};
+		\draw[fill=gray!95.774648](2.400000,2.400000)  circle (2.400000);
+		\node at (2.400000,2.400000) {3};
+		\draw[fill=gray!78.873239](8.800000,69.782451)  circle (8.800000);
+		\node at (8.800000,69.782451) {4};
+		\draw[fill=gray!67.605634](49.166010,4.000000)  circle (4.000000);
+		\node at (49.166010,4.000000) {5};
+		\draw[fill=gray!63.380282](16.918260,58.871270)  circle (4.800000);
+		\node at (16.918260,58.871270) {6};
+		\draw[fill=gray!49.295775](1.600000,14.613440)  circle (1.600000);
+		\node at (1.600000,14.613440) {7};
+		\draw[fill=gray!32.394366](24.512874,72.800000)  circle (7.200000);
+		\node at (24.512874,72.800000) {8};
+		\draw[fill=gray!28.169014](1.600000,11.413440)  circle (1.600000);
+		\node at (1.600000,11.413440) {9};
+		\draw[fill=gray!19.718310](30.533530,61.504350)  circle (5.600000);
+		\node at (30.533530,61.504350) {10};
+		\draw[fill=gray!19.718310](1.600000,41.386560)  circle (1.600000);
+		\node at (1.600000,41.386560) {11};
+		\draw[fill=gray!5.633803](39.664130,71.583650)  circle (8.000000);
+		\node at (39.664130,71.583650) {12};
+		\draw[fill=gray!5.633803](9.068545,3.200000)  circle (3.200000);
+		\node at (9.068545,3.200000) {13};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](23.200000,23.200000)  circle (23.200000);
+		\node at (23.200000,23.200000) {14};
+		\draw[fill=gray!71.428571](56.800000,56.800000)  circle (23.200000);
+		\node at (56.800000,56.800000) {15};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {16};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](27.200000,27.200000)  circle (27.200000);
+		\node at (27.200000,27.200000) {17};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](25.600000,25.600000)  circle (25.600000);
+		\node at (25.600000,25.600000) {18};
+		\draw[fill=gray!38.596491](57.600000,59.200000)  circle (20.800000);
+		\node at (57.600000,59.200000) {19};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](29.600000,29.600000)  circle (29.600000);
+		\node at (29.600000,29.600000) {20};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](27.200000,27.200000)  circle (27.200000);
+		\node at (27.200000,27.200000) {21};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {22};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](22.400000,22.400000)  circle (22.400000);
+		\node at (22.400000,22.400000) {23};
+		\draw[fill=gray!59.459459](54.400000,56.000000)  circle (24.000000);
+		\node at (54.400000,56.000000) {24};
+	\end{scope}
+\end{tikzpicture}

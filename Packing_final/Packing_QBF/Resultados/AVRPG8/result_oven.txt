@@ -1,0 +1,263 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 85.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (46.400000,85.200000);
+				\draw[fill=lightgray, opacity=0.3] (27.698221, 0) rectangle (69.298221,48.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,85.200000)}]
+				\draw (0,0) rectangle (80.000000, 34.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (59.200000,34.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(82.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 88.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (59.200000,49.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (19.200000,75.600000);
+				\draw[fill=lightgray, opacity=0.3] (53.714092, 0) rectangle (72.914092,72.000000);
+				\draw[fill=lightgray, opacity=0.3] (60.800000, 0) rectangle (80.000000,60.000000);
+				\draw[fill=lightgray, opacity=0.3] (41.600000, 0) rectangle (60.800000,50.400000);
+				\draw[fill=lightgray, opacity=0.3] (18.609670, 0) rectangle (36.209670,87.600000);
+				\draw[fill=lightgray, opacity=0.3] (50.047440, 0) rectangle (66.047440,74.400000);
+				\draw[fill=lightgray, opacity=0.3] (57.694700, 0) rectangle (73.694700,73.200000);
+				\draw[fill=lightgray, opacity=0.3] (64.000000, 0) rectangle (80.000000,64.800000);
+				\draw[fill=lightgray, opacity=0.3] (65.988240, 0) rectangle (78.788240,64.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (9.600000,74.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (8.000000,74.400000);
+				\draw[fill=lightgray, opacity=0.3] (10.501810, 0) rectangle (18.501810,60.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (6.400000,58.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (4.800000,75.600000);
+				\draw[fill=lightgray, opacity=0.3] (10.342954, 0) rectangle (15.142954,56.400000);
+				\draw[fill=lightgray, opacity=0.3] (19.346111, 0) rectangle (24.146111,52.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (3.200000,85.200000);
+				\draw[fill=lightgray, opacity=0.3] (6.505040, 0) rectangle (9.705040,56.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,88.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,88.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,78.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,63.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,49.200000);
+				\draw[fill=lightgray, opacity=0.3] (33.351296, 0) rectangle (41.351296,34.800000);
+				\draw[fill=lightgray, opacity=0.3] (37.268520, 0) rectangle (45.268520,19.200000);
+				\draw[fill=lightgray, opacity=0.3] (45.864840, 0) rectangle (52.264840,48.000000);
+				\draw[fill=lightgray, opacity=0.3] (36.811430, 0) rectangle (41.611430,31.200000);
+				\draw[fill=lightgray, opacity=0.3] (44.925810, 0) rectangle (49.725810,27.600000);
+				\draw[fill=lightgray, opacity=0.3] (59.185030, 0) rectangle (63.985030,13.200000);
+				\draw[fill=lightgray, opacity=0.3] (7.310315, 0) rectangle (10.510315,38.400000);
+				\draw[fill=lightgray, opacity=0.3] (18.779400, 0) rectangle (21.979400,37.200000);
+				\draw[fill=lightgray, opacity=0.3] (24.065295, 0) rectangle (27.265295,27.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,42.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (1.600000,19.200000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,88.800000)}]
+				\draw (0,0) rectangle (80.000000, 21.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (59.200000,21.600000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,110.400000)}]
+				\draw (0,0) rectangle (80.000000, 9.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (56.000000,9.600000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(164.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 61.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (56.000000,61.200000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,61.200000)}]
+				\draw (0,0) rectangle (80.000000, 57.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (56.000000,57.600000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(246.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 84.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (48.000000,82.800000);
+				\draw[fill=lightgray, opacity=0.3] (32.333259, 0) rectangle (75.533259,84.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,84.000000)}]
+				\draw (0,0) rectangle (80.000000, 19.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,19.200000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,103.200000)}]
+				\draw (0,0) rectangle (80.000000, 12.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,12.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,115.200000)}]
+				\draw (0,0) rectangle (80.000000, 3.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,3.600000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(328.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 78.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,78.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,78.000000)}]
+				\draw (0,0) rectangle (80.000000, 40.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (56.000000,40.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(410.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 80.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (51.200000,52.800000);
+				\draw[fill=lightgray, opacity=0.3] (36.800000, 0) rectangle (78.400000,80.400000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,80.400000)}]
+				\draw (0,0) rectangle (80.000000, 28.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (49.600000,12.000000);
+				\draw[fill=lightgray, opacity=0.3] (35.200000, 0) rectangle (78.400000,28.800000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,109.200000)}]
+				\draw (0,0) rectangle (80.000000, 8.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (48.000000,8.400000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(492.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 90.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (52.800000,90.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,90.000000)}]
+				\draw (0,0) rectangle (80.000000, 27.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (59.200000,27.600000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(574.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 88.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (52.800000,88.800000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,88.800000)}]
+				\draw (0,0) rectangle (80.000000, 28.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (57.600000,28.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(656.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 54.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,54.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,54.000000)}]
+				\draw (0,0) rectangle (80.000000, 50.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,50.400000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,104.400000)}]
+				\draw (0,0) rectangle (80.000000, 13.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (56.000000,13.200000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(738.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 76.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (48.000000,76.800000);
+				\draw[fill=lightgray, opacity=0.3] (32.333259, 0) rectangle (75.533259,54.000000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,76.800000)}]
+				\draw (0,0) rectangle (80.000000, 40.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (51.200000,40.800000);
+				\draw[fill=lightgray, opacity=0.3] (36.800000, 0) rectangle (78.400000,34.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(820.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 81.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (54.400000,81.600000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,81.600000)}]
+				\draw (0,0) rectangle (80.000000, 7.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (52.800000,7.200000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,88.800000)}]
+				\draw (0,0) rectangle (80.000000, 28.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (51.200000,14.400000);
+				\draw[fill=lightgray, opacity=0.3] (36.800000, 0) rectangle (78.400000,28.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(902.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 26.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (48.000000,26.400000);
+				\draw[fill=lightgray, opacity=0.3] (32.333259, 0) rectangle (75.533259,26.400000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,26.400000)}]
+				\draw (0,0) rectangle (80.000000, 25.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (48.000000,13.200000);
+				\draw[fill=lightgray, opacity=0.3] (32.333259, 0) rectangle (75.533259,25.200000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,51.600000)}]
+				\draw (0,0) rectangle (80.000000, 45.600000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (46.400000,45.600000);
+				\draw[fill=lightgray, opacity=0.3] (33.600000, 0) rectangle (80.000000,26.400000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,97.200000)}]
+				\draw (0,0) rectangle (80.000000, 16.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (46.400000,16.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(984.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 70.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (57.600000,70.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (16.000000,22.800000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,70.800000)}]
+				\draw (0,0) rectangle (80.000000, 43.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (49.600000,43.200000);
+				\draw[fill=lightgray, opacity=0.3] (35.200000, 0) rectangle (78.400000,38.400000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(1066.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 84.000000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (51.200000,84.000000);
+				\draw[fill=lightgray, opacity=0.3] (36.800000, 0) rectangle (78.400000,81.600000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,84.000000)}]
+				\draw (0,0) rectangle (80.000000, 28.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (57.600000,28.800000);
+			\end{scope}
+	\end{scope}
+	\begin{scope}[shift={(1148.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+			\begin{scope}[shift={(0.000000,0.000000)}]
+				\draw (0,0) rectangle (80.000000, 80.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (57.600000,76.800000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (12.800000,50.400000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (11.200000,80.400000);
+				\draw[fill=lightgray, opacity=0.3] (6.717950, 0) rectangle (17.917950,75.600000);
+				\draw[fill=lightgray, opacity=0.3] (12.757650, 0) rectangle (23.957650,73.200000);
+				\draw[fill=lightgray, opacity=0.3] (23.810873, 0) rectangle (35.010873,70.800000);
+				\draw[fill=lightgray, opacity=0.3] (48.599213, 0) rectangle (59.799213,67.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (9.600000,54.000000);
+				\draw[fill=lightgray, opacity=0.3] (55.479030, 0) rectangle (74.679030,20.400000);
+				\draw[fill=lightgray, opacity=0.3] (60.800000, 0) rectangle (80.000000,1.200000);
+				\draw[fill=lightgray, opacity=0.3] (31.236940, 0) rectangle (48.836940,31.200000);
+				\draw[fill=lightgray, opacity=0.3] (47.669700, 0) rectangle (65.269700,12.000000);
+				\draw[fill=lightgray, opacity=0.3] (54.822140, 0) rectangle (70.822140,24.000000);
+				\draw[fill=lightgray, opacity=0.3] (20.128240, 0) rectangle (31.328240,31.200000);
+				\draw[fill=lightgray, opacity=0.3] (43.858071, 0) rectangle (53.458071,44.400000);
+				\draw[fill=lightgray, opacity=0.3] (61.645220, 0) rectangle (71.245220,39.600000);
+				\draw[fill=lightgray, opacity=0.3] (65.061810, 0) rectangle (74.661810,20.400000);
+			\end{scope}
+			\begin{scope}[shift={(0.000000,80.400000)}]
+				\draw (0,0) rectangle (80.000000, 25.200000);
+				\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (51.200000,4.800000);
+				\draw[fill=lightgray, opacity=0.3] (36.800000, 0) rectangle (78.400000,25.200000);
+			\end{scope}
+	\end{scope}
+\end{tikzpicture}

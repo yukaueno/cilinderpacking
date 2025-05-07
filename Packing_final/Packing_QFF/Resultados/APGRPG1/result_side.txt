@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 87.600000);
+		\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (52.800000,27.600000);
+		\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (19.200000,85.200000);
+		\draw[fill=lightgray, opacity=0.3] (12.573210, 0) rectangle (28.573210,87.600000);
+		\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (9.600000,74.400000);
+	\end{scope}
+	\begin{scope}[shift={(82.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 19.200000);
+		\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (46.400000,16.800000);
+		\draw[fill=lightgray, opacity=0.3] (27.698221, 0) rectangle (69.298221,19.200000);
+	\end{scope}
+\end{tikzpicture}

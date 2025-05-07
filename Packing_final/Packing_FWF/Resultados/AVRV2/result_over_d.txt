@@ -1,0 +1,49 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](14.400000,14.400000)  circle (14.400000);
+		\node at (14.400000,14.400000) {1};
+		\draw[fill=gray!77.333333](3.200000,76.800000)  circle (3.200000);
+		\node at (3.200000,76.800000) {2};
+		\draw[fill=gray!74.666667](13.813199,71.200000)  circle (8.800000);
+		\node at (13.813199,71.200000) {3};
+		\draw[fill=gray!72.000000](16.000000,46.496601)  circle (16.000000);
+		\node at (16.000000,46.496601) {4};
+		\draw[fill=gray!65.333333](36.020222,67.200000)  circle (12.800000);
+		\node at (36.020222,67.200000) {5};
+		\draw[fill=gray!48.000000](1.600000,1.600000)  circle (1.600000);
+		\node at (1.600000,1.600000) {6};
+		\draw[fill=gray!18.666667](37.024750,28.004440)  circle (12.000000);
+		\node at (37.024750,28.004440) {7};
+		\draw[fill=gray!12.000000](31.027688,4.800000)  circle (4.800000);
+		\node at (31.027688,4.800000) {8};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {9};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {10};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](29.600000,29.600000)  circle (29.600000);
+		\node at (29.600000,29.600000) {11};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](24.000000,24.000000)  circle (24.000000);
+		\node at (24.000000,24.000000) {12};
+	\end{scope}
+\end{tikzpicture}

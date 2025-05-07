@@ -1,0 +1,861 @@
+# Este programa coloca os circulos no nivel
+# Vamos tentar colocar os dois primeiros circulos em lados opostos
+
+import circleintersection
+
+# Definindo as classes
+
+class Circulo:
+  def __init__(self, raio = None, posicao_x = None, posicao_y = None, nivel = None, altura = None, recipiente = None):
+    self.raio = raio
+    self.posicao_x = posicao_x
+    self.posicao_y = posicao_y
+    self.altura = altura
+    self.nivel = nivel
+    self.recipiente = recipiente
+
+class Nivel:
+  def __init__(self):
+    self.L = None # comprimento
+    self.W = None # largura
+    self.lista_circulos_colocados = []
+    self.altura = None
+    self.recipiente = None
+
+
+    
+# Definindo funcoes
+
+# Calcula os pontos de interseccao entre os lados dos niveis que retas
+def interseccao_entre_retas(nivel, lista_ponto, raio):
+
+  lista_ponto.append([raio,raio])
+  lista_ponto.append([raio,nivel.W-raio])
+  lista_ponto.append([nivel.L-raio,nivel.W-raio])
+  lista_ponto.append([nivel.L-raio,raio])
+  
+  return lista_ponto
+
+# Calcula os pontos de interseccao entre o lado do nivel e os circulos
+def interseccao_entre_nivel_circulo(nivel, lista_ponto, raio):
+
+  x = None
+  y = None
+
+  for item in (nivel.lista_circulos_colocados):
+  
+    R = (item.raio+raio)**2
+
+    # Em cada calculo abaixo estamos verificando se o numero obtido eh real
+    # Caso nao seja significa que nao ha interseccao
+    
+    # Lado1: y = raio
+    # (x-item.posicao_x)² + (raio-item.posicao_y)² = R
+    x = (R - (raio-item.posicao_y)**2)**(1/2)
+    if (isinstance(x,float) == True):
+      lista_ponto.append([x+item.posicao_x, raio])
+      lista_ponto.append([-x+item.posicao_x,raio])
+
+    # Lado2: x = raio
+    # (raio-item.posicao_x)² + (y-item.posicao_y)² = R
+    y = (R - (raio-item.posicao_x)**2)**(1/2)
+    if (isinstance(y,float) == True):
+      lista_ponto.append([raio,y+item.posicao_y])
+      lista_ponto.append([raio,-y+item.posicao_y])
+      
+    # Lado3: y = W - raio
+    # (x-item.posicao_x)² + (Nivel.W - raio-item.posicao_y)² = R
+    x = (R - (nivel.W - raio-item.posicao_y)**2)**(1/2)
+    if (isinstance(x,float) == True):
+      lista_ponto.append([x+item.posicao_x,nivel.W-raio])
+      lista_ponto.append([-x+item.posicao_x,nivel.W-raio])
+
+    # Lado4: x = L - raio
+    # (Nivel.L-raio-item.posicao_x)² + (y-item.posicao_y)² = R
+    y = (R - (nivel.L-raio-item.posicao_x)**2)**(1/2)
+    if (isinstance(y,float) == True):
+      lista_ponto.append([nivel.L-raio,y+item.posicao_y])
+      lista_ponto.append([nivel.L-raio,-y+item.posicao_y])
+
+  return lista_ponto
+
+# Calcula os pontos de interseccao entre os circulos que estiverem no nivel
+def interseccao_entre_circulos(nivel, lista_ponto, raio):
+
+  # Calculamos os pontos de interseccao de dois em dois
+
+  for aux1 in nivel.lista_circulos_colocados:
+      
+    for aux2 in nivel.lista_circulos_colocados:
+
+      # Fazemos uma verificacao assim para nao contar duas vezes o mesmo par de circulos
+      if nivel.lista_circulos_colocados.index(aux1) < nivel.lista_circulos_colocados.index(aux2):
+
+        C1 = circleintersection.Circle(aux1.posicao_x, aux1.posicao_y, aux1.raio+raio)
+        C2 = circleintersection.Circle(aux2.posicao_x, aux2.posicao_y, aux2.raio+raio)
+
+        aux3 = C1.circle_intersect(C2)
+        #print("Este eh o ponto",aux3)
+        # Verificamos se obtemos algum ponto de interseccao
+        # Se encontramos, vamos adicionar a lista de pontos
+        # Adicionamos um por um e verificamos se ha o segundo ponto de interseccao tambem
+        if(aux3 != None):
+          #print("Este eh o ponto",aux3[0])
+          lista_ponto.append(aux3[0])
+          if(aux3[1] != aux3[0]):
+            lista_ponto.append(aux3[1])
+          
+  return lista_ponto
+
+# Procura todas as interseccoes no nivel
+def procura_interseccoes(nivel, lista_ponto, raio):
+
+  # Primeiro calculamos a interseccao entre os lados dos niveis
+  lista_ponto = interseccao_entre_retas(nivel, lista_ponto,raio) 
+  
+  # Verificamos se ha circulos empacotados no nivel
+  # Caso tenha, vamos calcular as interseccoes
+  if not nivel.lista_circulos_colocados:
+    return lista_ponto
+  
+  else:
+    
+    # Calculamos a interseccao entre o lado do nivel e os circulos empacotados
+    lista_ponto = interseccao_entre_nivel_circulo(nivel,lista_ponto,raio)
+    
+    # Se houver mais de um circulo empacotados no nivel calculamos a interseccao entre os circulos
+    if(len(nivel.lista_circulos_colocados) > 1):
+      lista_ponto = interseccao_entre_circulos(nivel,lista_ponto,raio)
+  
+  return lista_ponto
+
+# Verifica na lista_ponto ha posicoes em que ha sobreposicao com os circulos empacotados
+def verifica_sobreposicao_circulos(nivel,lista_ponto,raio):
+
+  # Caso tenha pontos de interseccao na lista_ponto fazemos a verificacao
+  eps = 10^(-9)
+  if not lista_ponto == False:
+
+    # Usaremos uma lista auxiliar para colocar os pontos que nao sobrepoem com os circulos empacotados
+    auxlist = []
+
+    # Verificamos se temos circulos empacotados
+    if not (nivel.lista_circulos_colocados) == False:
+
+      # Percorremos a lista_ponto se verificamos se sobrepoe em algum circulo empacotado  
+      for item1 in lista_ponto:
+
+        # Usaremos uma variavel auxiliar para indicar se encontramos alguma sobreposicao
+        # Inicializamos supondo que nao ha sobreposicao
+        valido = False
+
+        # Percorremos em cada circulo empacotado para verificar se ha sobreposicao
+        for aux in nivel.lista_circulos_colocados:
+          
+          # Para verificar a sobreposicao calculamos a distancia entre o ponto do item1 e o ponto do aux
+          # Caso a distancia seja menor que a soma dos raios do item1 e aux ha sobreposicao
+          dist_circle = ((aux.posicao_x - item1[0])**2 + (aux.posicao_y - item1[1])**2)
+          # Subtrai 0.01 por problemas de arrendodamento...
+          
+          dist_ray =  (aux.raio + raio)**2 
+          #print(dist_circle,dist_ray)
+          if ((dist_circle - dist_ray) < eps):
+            valido = True
+            
+        # Se nao houver nenhuma sobreposicao adicinamos a lista auxiliar
+        if valido == False:
+          auxlist.append(item1)
+
+    # Assim obtemos todos os pontos que nao sobrepoem os circulos empacotados
+    # E atualizamos a lista_ponto
+    lista_ponto = auxlist  
+    return lista_ponto
+
+# Verifica na lista_ponto os pontos que sao validos
+def verifica_pontos_validos(nivel,lista_ponto,raio):
+
+    # Verificamos se existem pontos na lista
+    if not lista_ponto == False:
+
+      # Utilizamos uma lista auxiliar para colocar todos os pontos fora do nivel
+      auxlist = []
+
+      # Percorremos a lista_ponto
+      for item in lista_ponto:
+        #print("Este eh o item ", item)
+        # Colocamos os pontos que estao dentro do nivel na lista auxiliar
+        if (item[0] >= raio) and (item[0] <= nivel.L-raio) and (item[1] >= raio) and (item[1] <= nivel.W-raio):
+            auxlist.append(item)
+
+      # Atualizamos a lista_ponto com os pontos que estao dentro do nivel  
+      lista_ponto = auxlist
+      # Foi para verificar erro
+      #if(raio==22.4):
+        #print("===",lista_ponto)
+      # Vamos verificar os pontos que sobrepoe outro circulos
+      lista_ponto = verifica_sobreposicao_circulos(nivel,lista_ponto,raio)
+
+      return lista_ponto
+  
+# Depois de obter os pontos validos, fazemos um desempate para obtermos apenas um ponto
+def escolha_desempate(lista_ponto):
+  # Supomos que a lista_ponto nao esta vazia
+
+  # Vamos escolher o ponto mais a esquerda e mais baixo
+    
+  # Primeiro o ponto(s) mais a esquerda
+
+  # Comecamos supondo que o primeiro da lista eh o que queremos
+  aux = lista_ponto[0]
+  # E vamos comparar com os outros se ha outro mais a esquerda
+  for item in lista_ponto:
+    if(item[0] < aux[0]):
+      aux = item
+      
+  # Agora vamos procurar o ponto mais baixo entre os pontos que obtemos acima  
+  # Supomos que o ponto do aux eh o que queremos
+  aux1 = aux
+  for item in lista_ponto:
+    if(item[0] == aux1[0] and item[1] < aux1[1]):
+      aux1 = item
+
+  return aux1
+
+def escolha_desempate_o(lista_ponto):
+  # Supomos que a lista_ponto nao esta vazia
+
+  # Vamos escolher o ponto mais a esquerda e mais baixo
+    
+  # Primeiro o ponto(s) mais a esquerda
+
+  # Comecamos supondo que o primeiro da lista eh o que queremos
+  aux = lista_ponto[0]
+  # E vamos comparar com os outros se ha outro mais a direita
+  for item in lista_ponto:
+    if(item[0] > aux[0]):
+      aux = item
+      
+  # Agora vamos procurar o ponto mais para cima entre os pontos que obtemos acima  
+  # Supomos que o ponto do aux eh o que queremos
+  aux1 = aux
+  for item in lista_ponto:
+    if(item[0] == aux1[0] and item[1] > aux1[1]):
+      aux1 = item
+
+  return aux1
+# Coloca o circulo no nivel se possivel
+def coloca_cilindro(nivel,cilindro,numero):
+
+  # Inicializados uma lista de pontos
+  lista_ponto = []
+  # Usaremos uma auxiliar para indicar se conseguimos colocar o circulo
+  # Vamos supor que podemos por enquanto
+  aux = True
+  
+  raio = cilindro[0]
+
+  # Se o circulo nao cabe
+  if 2*raio > nivel.L or 2*raio > nivel.W:
+    aux = False
+  # Se o circulo cabe no nivel, vamos calucular as interseccoes
+  else:
+    lista_ponto = procura_interseccoes(nivel,lista_ponto,raio)
+    
+    # Vamos verificar quais sao as possiveis possicoes
+    lista_ponto = verifica_pontos_validos(nivel,lista_ponto,raio)
+    
+    # Verificamos se temos pontos validos
+    # Se nao encontramos pontos validos
+    if not lista_ponto:
+    # Entao o circulo nao cabe nesse nivel
+      aux = False
+           
+    else:
+      #if lista_ponto != []:
+      #print(lista_ponto)
+      # Se temos de dois pontos validos
+      #print("Tamnho da lista de pontos ",len(lista_ponto))
+      if len([lista_ponto]) > 0:
+        # Vamos usar o desempate
+        lista_ponto = escolha_desempate(lista_ponto)
+        #print("Tamnho da lista de pontos desempate ",len([lista_ponto]))
+        
+        # Vamos colocar o circulo na posicao que encontramos
+        # Vamos verificar se obtemos uma posicao
+        if len([lista_ponto]) == 1:
+          nivel.lista_circulos_colocados.append(Circulo(raio,lista_ponto[0],lista_ponto[1],numero,cilindro[1]))
+          #print("Esse eh a posicao ", lista_ponto, "para o circulo de raio ", raio,"\n")
+        else:
+          print("Houve algum problema, nao conseguimos um ponto\n")
+      
+
+  return aux
+
+# Coloca o circulo no nivel se possivel
+def coloca_cilindro_o(nivel,cilindro,numero):
+
+  # Inicializados uma lista de pontos
+  lista_ponto = []
+  # Usaremos uma auxiliar para indicar se conseguimos colocar o circulo
+  # Vamos supor que podemos por enquanto
+  aux = True
+  
+  raio = cilindro[0]
+
+  # Se o circulo nao cabe
+  if 2*raio > nivel.L or 2*raio > nivel.W:
+    aux = False
+  # Se o circulo cabe no nivel, vamos calucular as interseccoes
+  else:
+    lista_ponto = procura_interseccoes(nivel,lista_ponto,raio)
+    
+    # Vamos verificar quais sao as possiveis possicoes
+    lista_ponto = verifica_pontos_validos(nivel,lista_ponto,raio)
+    
+    # Verificamos se temos pontos validos
+    # Se nao encontramos pontos validos
+    if not lista_ponto:
+    # Entao o circulo nao cabe nesse nivel
+      aux = False
+           
+    else:
+      #if lista_ponto != []:
+      #print(lista_ponto)
+      # Se temos de dois pontos validos
+      #print("Tamnho da lista de pontos ",len(lista_ponto))
+      if len([lista_ponto]) > 0:
+        # Vamos usar o desempate
+        lista_ponto = escolha_desempate_o(lista_ponto)
+        #print("Tamnho da lista de pontos desempate ",len([lista_ponto]))
+        
+        # Vamos colocar o circulo na posicao que encontramos
+        # Vamos verificar se obtemos uma posicao
+        if len([lista_ponto]) == 1:
+          nivel.lista_circulos_colocados.append(Circulo(raio,lista_ponto[0],lista_ponto[1],numero,cilindro[1]))
+          #print("Esse eh a posicao ", lista_ponto, "para o circulo de raio ", raio,"\n")
+        else:
+          print("Houve algum problema, nao conseguimos um ponto\n")
+      
+
+  return aux
+
+# Vamos calcular as alturas dos niveis
+def calcula_altura_max(lista_nivel):
+
+  for nivel in lista_nivel:
+    # Inicializando a altura do nivel
+    altura = 0
+    for cilindro in nivel.lista_circulos_colocados:
+      if altura < cilindro.altura:
+        altura = cilindro.altura
+        #print("altura",cilindro.altura)
+    nivel.altura = altura  
+
+# Colocando os resultados em um arquivo em tikz
+def resultados_arquivar(lista_nivel):
+
+  # Para ver o resultado de cima
+  # Criando um arquivo
+  f= open("result_over.txt","w+")
+
+  f.write("\\begin{tikzpicture}[scale=0.1]\r\n")
+
+  aux_y = 0
+
+  for d in lista_nivel:
+    f.write("  \\begin{scope}[shift={(0.000000,%f)}]\r\n" % aux_y)
+    f.write("    \draw (0,0) rectangle (%f, %f);\r\n" % (d.L, d.W))
+
+    for c in d.lista_circulos_colocados:
+      perc = 100*c.altura/d.altura
+      f.write("    \draw[fill=black!%f](%f,%f)  circle (%f);\r\n" % (perc, c.posicao_x, c.posicao_y, c.raio))
+
+    aux_y = aux_y + d.W + 2
+    #f.write("This is line %d\r\n" % (i+1))
+    f.write("  \end{scope}\r\n")
+
+  f.write("\end{tikzpicture}\r\n")
+
+  f.close() 
+
+  # Para ver o resultado de perfil 
+  f= open("result_side.txt","w+")
+  f.write("\\begin{tikzpicture}[scale=0.1]\r\n")
+
+  aux_y = 0
+
+  for a in lista_nivel:
+    f.write("  \\begin{scope}[shift={(%f,0.000000)}]\r\n" % aux_y)
+    f.write("    \draw (0,0) rectangle (%f, %f);\r\n" % (a.L,a.altura) )
+    
+    for b in a.lista_circulos_colocados:
+
+      f.write("    \draw[fill=lightgray, opacity=0.3] (%f, 0) rectangle (%f,%f);\r\n" % (b.posicao_x-b.raio, b.raio*2+(b.posicao_x-b.raio), b.altura))
+
+    aux_y = aux_y + a.L + 2
+    #f.write("This is line %d\r\n" % (i+1))
+    f.write("  \end{scope}\r\n")
+
+  f.write("\end{tikzpicture}\r\n")
+
+  f.close() 
+
+# Colocando os resultados em um arquivo em tikz passoa a passo
+def resultados_arquivar_detalhado(lista_nivel):
+
+   # Para ver o resultado de cima
+  # Criando um arquivo
+  f= open("result_over_d.txt","w+")
+
+  
+  i = 1
+  for d in lista_nivel:
+    f.write("\\begin{tikzpicture}[scale=0.1]\r\n")
+
+    aux_y = 0
+    
+    if d.lista_circulos_colocados != []:
+      f.write("  \\begin{scope}[shift={(0.000000,%f)}]\r\n" % aux_y)
+      f.write("    \draw (0,0) rectangle (%f, %f);\r\n" % (d.L, d.W))
+
+      for c in d.lista_circulos_colocados:
+        perc = 100*c.altura/d.altura
+        f.write("    \draw[fill=red!%f](%f,%f)  circle (%f);\r\n" % (perc, c.posicao_x, c.posicao_y, c.raio))
+        f.write("    \\node at (%f,%f) {%d};\r\n" % (c.posicao_x, c.posicao_y, i))
+        i = i + 1
+      aux_y = aux_y + d.W + 2
+      #f.write("This is line %d\r\n" % (i+1))
+      f.write("  \end{scope}\r\n")
+
+    f.write("\end{tikzpicture}\r\n")
+
+  f.close() 
+
+
+def empacota_circulos(L,W,lista_cilindro):
+  
+  # Vamos so preencher um nivel ate ficar cheio
+
+  # Tamanho do Nivel
+  #L = 50
+  #W = 50
+  # Inicializando um nivel
+
+  nivel = Nivel()
+  #nivel.L = 21
+  #nivel.W = 15
+  nivel.L = L
+  nivel.W = W
+  #nivel.lista_circulos_colocados.append(Circulo(2,2,2))
+  #nivel.lista_circulos_colocados.append(Circulo(3,3,))
+  
+  #Lista de Circulos q vamos empacotar, no caso so precisamos dos raios
+  #lista_raios = [19.2,10.4,10.4,11.2,13.6,16.0]
+  #lista_raios = [2,3,1]
+
+  # Inicializando uma lista de niveis
+  lista_nivel = []
+
+  # Colocando o primeiro nivel na lista_nivel
+  lista_nivel.append(nivel)
+
+  # Inicializando um auxiliar para indicar em qual nivel estamos
+  # Comecamos no nivel 0
+  aux = 0
+  i = 1
+  # Vamos colocar um circulo de cada vez
+  for cilindro in lista_cilindro:
+    # lista_ponto = []
+    #print(cilindro)
+    # Vamos verificar se obtemos um circulo
+    if(cilindro is None):
+      print('Nessa possicao nao ha circulo\n')  
+    else:
+      #print("Vamos colocar o cilindro",i,"\n")
+      #i = i + 1
+      # vamos tentar colocar o circulo no nivel
+      if coloca_cilindro(lista_nivel[aux],cilindro,aux) == False:
+        #print("Nao conseguimos colocar o circulo de raio ", raio)
+        aux = aux + 1
+        
+        nivel = Nivel()
+        nivel.L = L
+        nivel.W = W
+        # criamos um outro nivel
+        lista_nivel.append(nivel)
+        #print(len(lista_nivel))        
+        # tentamos colocar no proximo nivel
+        if coloca_cilindro(lista_nivel[aux],cilindro,aux) == False:
+          print("Nao conseguimos colocar o circulo ", i, " de raio ", cilindro[0],"\n")
+
+  # Vamos calcular a altura dos niveis
+  calcula_altura_max(lista_nivel)
+  # Vamos colocar os resultados num arquivo
+  resultados_arquivar(lista_nivel)
+  resultados_arquivar_detalhado(lista_nivel)
+  return lista_nivel
+    
+# Empacota os cilindros
+# depois de de encher um nível tentamos colocar outros nesse nivel
+def empacota_circulos_m(L,W,lista_cilindro):
+  
+  nivel = Nivel()
+  nivel.L = L
+  nivel.W = W
+  
+  # Inicializando uma lista de niveis
+  lista_nivel = []
+
+  # Colocando o primeiro nivel na lista_nivel
+  lista_nivel.append(nivel)
+
+  # Inicializando um auxiliar para indicar em qual nivel estamos
+  # Comecamos no nivel 0
+  conta_nivel = 0
+  #conta_cilindro = 1
+
+  # Vamos colocar um circulo de cada vez
+  while lista_cilindro != []:
+    # Pegamos o ultimo elemento da lista
+    # Pois a lista esta em ordem crescente e a funcao pop retira o cilindro de tras para frente
+    #cilindro = lista_cilindro[0]
+
+    # Vamos verificar se obtemos um circulo
+    #if(cilindro is None):
+      #print('Nessa possicao nao ha circulo\n')  
+    #else:
+      #if coloca_cilindro(lista_nivel[conta_nivel],cilindro,conta_nivel) == False:
+        
+        # Se nao conseguimos colocar mais cilindros eh porque o nivel ja esta cheio
+        # Entao tentamos colocar outros cilindros nesse mesmo nível
+        enche_nivel(lista_nivel, lista_cilindro,conta_nivel)
+        #print("Conseguimos preencher com ",enche_nivel(lista_nivel, lista_cilindro,conta_nivel), " cilindros\n")
+        #reordena_nivel(lista_nivel,conta_nivel)
+        #print("Depois de reordenar ",enche_nivel(lista_nivel, lista_cilindro,conta_nivel), "\n")
+
+        # Depois que tentamos colocar todos os cilindros possiveis num nivel, caso tenha mais cilindros criamos um outro nivel para colocar o resto
+        if lista_cilindro != []:
+          conta_nivel += 1
+        
+          nivel = Nivel()
+          nivel.L = L
+          nivel.W = W
+          # criamos um outro nivel
+          lista_nivel.append(nivel)
+          #print(len(lista_nivel))        
+          # tentamos colocar no proximo nivel
+
+      # Se conseguirmos colocar o cilindro, retiramos esse cilindro da lista  
+      #else:
+        # Remove o primeiro elemento que seja igual a cilindro
+        #lista_cilindro.remove(cilindro)
+
+  # Vamos calcular a altura dos niveis
+  calcula_altura_max(lista_nivel)
+  # Vamos colocar os resultados num arquivo
+  resultados_arquivar(lista_nivel)
+  resultados_arquivar_detalhado(lista_nivel)
+  return lista_nivel
+    
+
+def enche_nivel(lista_nivel, lista_cilindro,conta_nivel):
+
+  # Entao tentamos colocar outros cilindros nesse mesmo nível
+  # Contamos o numero de cilindros que conseguimos colocar
+  aux = 0
+  lista_aux = []
+  for cilindro in lista_cilindro:
+    # Vamos verificar se obtemos um circulo
+    if(cilindro is None):
+      print('Nessa possicao nao ha circulo\n')  
+    else:
+    # Os cilindros que conseguimos colocar no nivel vamos retirando da lista
+      if coloca_cilindro(lista_nivel[conta_nivel],cilindro,conta_nivel) == True:
+        lista_aux.append(cilindro)    
+        aux += 1
+
+  # Retimos os cilindros que cabem no Nivel
+  for cilindro in lista_aux:
+    lista_cilindro.remove(cilindro)
+
+  return aux
+
+def recoloca_cilindro(lista_nivel, lista_cilindro,conta_nivel):
+
+  # Entao tentamos colocar outros cilindros nesse mesmo nível
+  # Contamos o numero de cilindros que conseguimos colocar
+  lista_aux = []
+  lista_sobra = []
+  for cilindro in lista_cilindro:
+    # Vamos verificar se obtemos um circulo
+    #print(cilindro)
+    if(cilindro is None):
+      print('Nessa possicao nao ha circulo\n')  
+    else:
+    # Os cilindros que conseguimos colocar no nivel vamos retirando da lista
+      item = [cilindro.raio,cilindro.altura]
+      if coloca_cilindro(lista_nivel[conta_nivel],item,conta_nivel) == True:
+        lista_aux.append(cilindro)    
+      else:
+        lista_sobra.append(cilindro)
+
+  # Retimos os cilindros que cabem no Nivel
+  for cilindro in lista_aux:
+    lista_cilindro.remove(cilindro)
+
+  return lista_sobra
+
+def recoloca_cilindro_o(lista_nivel, lista_cilindro,conta_nivel):
+
+  # Entao tentamos colocar outros cilindros nesse mesmo nível
+  # Contamos o numero de cilindros que conseguimos colocar
+  lista_aux = []
+  lista_sobra = []
+  aux = 0
+  for cilindro in lista_cilindro:
+    # Vamos verificar se obtemos um circulo
+    #print(cilindro)
+    if(cilindro is None):
+      print('Nessa possicao nao ha circulo\n')  
+    else:
+    # Os cilindros que conseguimos colocar no nivel vamos retirando da lista
+      item = [cilindro.raio,cilindro.altura]
+      if aux == 1:
+        if coloca_cilindro_o(lista_nivel[conta_nivel],item,conta_nivel) == True:
+          lista_aux.append(cilindro)    
+        else:
+          lista_sobra.append(cilindro)
+      else:
+        if coloca_cilindro(lista_nivel[conta_nivel],item,conta_nivel) == True:
+          lista_aux.append(cilindro)    
+        else:
+          lista_sobra.append(cilindro)
+      aux += 1
+  # Retimos os cilindros que cabem no Nivel
+  for cilindro in lista_aux:
+    lista_cilindro.remove(cilindro)
+
+  return lista_sobra
+
+# Reordena os cilindros do nivel e tenta colocar mais cilindros
+def reordena_nivel(lista_nivel,conta_nivel):
+  lista = lista_nivel[conta_nivel].lista_circulos_colocados
+  lista.sort(key=lambda cilindro: cilindro.raio,reverse=True)
+  
+  # Depois de ordenar por raio, vamos colocar no Nivel
+  # Mas vamos zerar o nivel antes
+  lista_nivel[conta_nivel].lista_circulos_colocados = []
+  lista_sobra = recoloca_cilindro(lista_nivel, lista, conta_nivel)
+
+  # Os cilindros que ficarem fora vao ser transformados no estado inicial: (raio,altura) 
+  if lista_sobra != []:
+    lista_aux = []
+    for circulos in lista_sobra:
+      lista_aux.append([circulos.raio,circulos.altura])
+    
+    lista_sobra = lista_aux
+
+  return lista_sobra
+  # Vamos verificar se conseguimos colocar todos os cilindros
+  # Se nao caonseguirmos, vamos retornar os circulos que sobraram
+    
+  #print("+++ ",lista_nivel[conta_nivel].lista_circulos_colocados)
+def reordena_nivel_o(lista_nivel,conta_nivel):
+  lista = lista_nivel[conta_nivel].lista_circulos_colocados
+  lista.sort(key=lambda cilindro: cilindro.raio,reverse=True)
+  
+  # Depois de ordenar por raio, vamos colocar no Nivel
+  # Mas vamos zerar o nivel antes
+  lista_nivel[conta_nivel].lista_circulos_colocados = []
+  lista_sobra = recoloca_cilindro_o(lista_nivel, lista, conta_nivel)
+
+  # Os cilindros que ficarem fora vao ser transformados no estado inicial: (raio,altura) 
+  if lista_sobra != []:
+    lista_aux = []
+    for circulos in lista_sobra:
+      lista_aux.append([circulos.raio,circulos.altura])
+    
+    lista_sobra = lista_aux
+
+  return lista_sobra
+# Empacota os cilindros
+# depois de de encher um nível tentamos colocar outros
+# e dentre os que foram colocados no nivel vamos reorganizar os cilindros pelo raio e tentar colocar mais cilindros  
+def empacota_circulos_m1(L,W,lista_cilindro):
+  
+  nivel = Nivel()
+  nivel.L = L
+  nivel.W = W
+  
+  # Inicializando uma lista de niveis
+  lista_nivel = []
+
+  # Colocando o primeiro nivel na lista_nivel
+  lista_nivel.append(nivel)
+
+  # Inicializando um auxiliar para indicar em qual nivel estamos
+  # Comecamos no nivel 0
+  conta_nivel = 0
+  #conta_cilindro = 1
+
+  # Vamos colocar um circulo de cada vez
+  while lista_cilindro != []:
+    # Pegamos o ultimo elemento da lista
+    # Pois a lista esta em ordem crescente e a funcao pop retira o cilindro de tras para frente
+    #cilindro = lista_cilindro[0]
+
+    # Vamos verificar se obtemos um circulo
+    #if(cilindro is None):
+      #print('Nessa possicao nao ha circulo\n')  
+    #else:
+      #if coloca_cilindro(lista_nivel[conta_nivel],cilindro,conta_nivel) == False:
+        
+        # Se nao conseguimos colocar mais cilindros eh porque o nivel ja esta cheio
+        # Entao tentamos colocar outros cilindros nesse mesmo nível
+        enche_nivel(lista_nivel, lista_cilindro,conta_nivel)
+        #print("Conseguimos preencher com ",enche_nivel(lista_nivel, lista_cilindro,conta_nivel), " cilindros\n")
+        #lista_sobra = reordena_nivel(lista_nivel,conta_nivel)
+        lista_cilindro = reordena_nivel(lista_nivel,conta_nivel) + lista_cilindro
+
+        print("Depois de reordenar ",enche_nivel(lista_nivel, lista_cilindro,conta_nivel), "\n")
+
+        # Depois que tentamos colocar todos os cilindros possiveis num nivel, caso tenha mais cilindros criamos um outro nivel para colocar o resto
+        if lista_cilindro != []:
+          conta_nivel += 1
+        
+          nivel = Nivel()
+          nivel.L = L
+          nivel.W = W
+          # criamos um outro nivel
+          lista_nivel.append(nivel)
+          #print(len(lista_nivel))        
+          # tentamos colocar no proximo nivel
+
+      # Se conseguirmos colocar o cilindro, retiramos esse cilindro da lista  
+      #else:
+        # Remove o primeiro elemento que seja igual a cilindro
+        #lista_cilindro.remove(cilindro)
+
+  # Vamos calcular a altura dos niveis
+  calcula_altura_max(lista_nivel)
+  # Vamos colocar os resultados num arquivo
+  resultados_arquivar(lista_nivel)
+  resultados_arquivar_detalhado(lista_nivel)
+  return lista_nivel
+
+
+def enche_nivel_o(lista_nivel, lista_cilindro,conta_nivel):
+
+  # Entao tentamos colocar outros cilindros nesse mesmo nível
+  # Contamos o numero de cilindros que conseguimos colocar
+  aux = 0
+  lista_aux = []
+  for cilindro in lista_cilindro:
+    # Vamos verificar se obtemos um circulo
+    if(cilindro is None):
+      print('Nessa possicao nao ha circulo\n')  
+    else:
+    # Os cilindros que conseguimos colocar no nivel vamos retirando da lista
+      # se o proximo cilindro eh o segundo vamos colocar no lado oposto
+      if aux == 1:
+        if coloca_cilindro_o(lista_nivel[conta_nivel],cilindro,conta_nivel) == True:
+          lista_aux.append(cilindro)    
+          aux += 1
+      else:
+        if coloca_cilindro(lista_nivel[conta_nivel],cilindro,conta_nivel) == True:
+          lista_aux.append(cilindro)    
+          aux += 1
+
+  # Retimos os cilindros que cabem no Nivel
+  for cilindro in lista_aux:
+    lista_cilindro.remove(cilindro)
+
+  return aux
+
+# Empacota os cilindros onde os dois primeiros em cada nivel ficam em lados opostos
+# depois de de encher um nível tentamos colocar outros nesse nivel
+def empacota_circulos_o(L,W,lista_cilindro):
+  
+  nivel = Nivel()
+  nivel.L = L
+  nivel.W = W
+  
+  # Inicializando uma lista de niveis
+  lista_nivel = []
+
+  # Colocando o primeiro nivel na lista_nivel
+  lista_nivel.append(nivel)
+
+  # Inicializando um auxiliar para indicar em qual nivel estamos
+  # Comecamos no nivel 0
+  conta_nivel = 0
+  #conta_cilindro = 1
+
+  # Vamos colocar um circulo de cada vez
+  while lista_cilindro != []:
+    enche_nivel_o(lista_nivel, lista_cilindro,conta_nivel)
+    #print("Conseguimos preencher com ",enche_nivel_o(lista_nivel, lista_cilindro,conta_nivel), " cilindros\n")
+    
+    if lista_cilindro != []:
+      conta_nivel += 1
+        
+      nivel = Nivel()
+      nivel.L = L
+      nivel.W = W
+      # criamos um outro nivel
+      lista_nivel.append(nivel)
+    
+  # Vamos calcular a altura dos niveis
+  calcula_altura_max(lista_nivel)
+  # Vamos colocar os resultados num arquivo
+  resultados_arquivar(lista_nivel)
+  resultados_arquivar_detalhado(lista_nivel)
+  return lista_nivel
+
+# Empacota os cilindros onde os dois primeiros em cada nivel ficam em lados opostos
+# depois de de encher um nível tentamos colocar outros nesse nivel
+# e reordena por raio e tenta colocar mais
+def empacota_circulos_o1(L,W,lista_cilindro):
+  
+  nivel = Nivel()
+  nivel.L = L
+  nivel.W = W
+  
+  # Inicializando uma lista de niveis
+  lista_nivel = []
+
+  # Colocando o primeiro nivel na lista_nivel
+  lista_nivel.append(nivel)
+
+  # Inicializando um auxiliar para indicar em qual nivel estamos
+  # Comecamos no nivel 0
+  conta_nivel = 0
+  #conta_cilindro = 1
+
+  # Vamos colocar um circulo de cada vez
+  while lista_cilindro != []:
+      
+    # Se nao conseguimos colocar mais cilindros eh porque o nivel ja esta cheio
+    # Entao tentamos colocar outros cilindros nesse mesmo nível
+    enche_nivel_o(lista_nivel, lista_cilindro,conta_nivel)
+    #print("Conseguimos preencher com ",enche_nivel_o(lista_nivel, lista_cilindro,conta_nivel), " cilindros\n")
+    #lista_sobra = reordena_nivel(lista_nivel,conta_nivel)
+    lista_cilindro = reordena_nivel_o(lista_nivel,conta_nivel) + lista_cilindro
+
+    print("Depois de reordenar ",enche_nivel(lista_nivel, lista_cilindro,conta_nivel), "\n")
+
+    if lista_cilindro != []:
+      conta_nivel += 1
+        
+      nivel = Nivel()
+      nivel.L = L
+      nivel.W = W
+      # criamos um outro nivel
+      lista_nivel.append(nivel)
+    
+  # Vamos calcular a altura dos niveis
+  calcula_altura_max(lista_nivel)
+  # Vamos colocar os resultados num arquivo
+  resultados_arquivar(lista_nivel)
+  resultados_arquivar_detalhado(lista_nivel)
+  return lista_nivel

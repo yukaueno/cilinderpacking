@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+		\begin{scope}[shift={(0.000000,0.000000)}]
+			\draw (0,0) rectangle (80.000000, 49.200000);
+			\node at (1.5,1.5) {1};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (38.400000,31.200000);
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (32.000000,49.200000);
+			\draw[fill=lightgray, opacity=0.3] (25.390860, 0) rectangle (52.590860,45.600000);
+			\draw[fill=lightgray, opacity=0.3] (35.880473, 0) rectangle (58.280473,49.200000);
+			\draw[fill=lightgray, opacity=0.3] (37.061635, 0) rectangle (57.861635,45.600000);
+			\draw[fill=lightgray, opacity=0.3] (46.222620, 0) rectangle (67.022620,42.000000);
+		\end{scope}
+	\end{scope}
+\end{tikzpicture}

@@ -1,0 +1,41 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\draw[fill=gray!84.931507](9.600000,60.790242)  circle (9.600000);
+		\draw[fill=gray!30.136986](23.168395,72.000000)  circle (8.000000);
+		\draw[fill=gray!9.589041](35.027060,62.491460)  circle (7.200000);
+		\draw[fill=gray!17.808219](39.720318,74.400000)  circle (5.600000);
+		\draw[fill=gray!91.780822](3.200000,3.200000)  circle (3.200000);
+		\draw[fill=gray!83.561644](3.200000,46.931455)  circle (3.200000);
+		\draw[fill=gray!78.082192](3.200000,71.875368)  circle (3.200000);
+		\draw[fill=gray!23.287671](7.287542,76.800000)  circle (3.200000);
+		\draw[fill=gray!15.068493](22.399950,60.826390)  circle (3.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,82.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,164.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,246.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,328.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,410.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=gray!32.786885](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,492.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](21.600000,21.600000)  circle (21.600000);
+		\draw[fill=gray!98.305085](58.400000,58.400000)  circle (21.600000);
+	\end{scope}
+\end{tikzpicture}

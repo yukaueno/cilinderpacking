@@ -1,0 +1,43 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+		\begin{scope}[shift={(0.000000,0.000000)}]
+			\draw (0,0) rectangle (80.000000, 64.800000);
+			\node at (1.5,1.5) {1};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (52.800000,64.800000);
+			\draw[fill=lightgray, opacity=0.3] (32.227417, 0) rectangle (65.827417,15.600000);
+		\end{scope}
+		\begin{scope}[shift={(0.000000,64.800000)}]
+			\draw (0,0) rectangle (80.000000, 3.600000);
+			\node at (1.5,1.5) {2};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (56.000000,3.600000);
+		\end{scope}
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+		\begin{scope}[shift={(0.000000,0.000000)}]
+			\draw (0,0) rectangle (80.000000, 68.400000);
+			\node at (1.5,1.5) {1};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (52.800000,68.400000);
+			\draw[fill=lightgray, opacity=0.3] (32.227417, 0) rectangle (65.827417,26.400000);
+		\end{scope}
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+		\begin{scope}[shift={(0.000000,0.000000)}]
+			\draw (0,0) rectangle (80.000000, 87.600000);
+			\node at (1.5,1.5) {1};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (57.600000,87.600000);
+			\draw[fill=lightgray, opacity=0.3] (37.027417, 0) rectangle (65.827417,80.400000);
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (9.600000,79.200000);
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (19.200000,74.400000);
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (6.400000,19.200000);
+			\draw[fill=lightgray, opacity=0.3] (53.519911, 0) rectangle (75.919911,14.400000);
+			\draw[fill=lightgray, opacity=0.3] (15.314838, 0) rectangle (29.714838,13.200000);
+		\end{scope}
+	\end{scope}
+\end{tikzpicture}

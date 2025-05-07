@@ -1,0 +1,647 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!94.666667](29.600000,29.600000)  circle (29.600000);
+		\draw[fill=black!93.333333](9.600000,63.314092)  circle (9.600000);
+		\draw[fill=black!81.333333](63.314092,9.600000)  circle (9.600000);
+		\draw[fill=black!100.000000](27.409670,67.937490)  circle (8.800000);
+		\draw[fill=black!98.666667](67.937490,27.409670)  circle (8.800000);
+		\draw[fill=black!98.666667](71.200000,71.200000)  circle (8.800000);
+		\draw[fill=black!92.000000](53.600000,71.200000)  circle (8.800000);
+		\draw[fill=black!97.333333](62.400000,56.889160)  circle (8.000000);
+		\draw[fill=black!88.000000](72.000000,43.711081)  circle (8.000000);
+		\draw[fill=black!86.666667](41.217260,63.849630)  circle (5.600000);
+		\draw[fill=black!100.000000](4.800000,4.800000)  circle (4.800000);
+		\draw[fill=black!85.333333](38.908189,75.200000)  circle (4.800000);
+		\draw[fill=black!92.000000](4.000000,75.707639)  circle (4.000000);
+		\draw[fill=black!90.666667](14.501810,76.000000)  circle (4.000000);
+		\draw[fill=black!90.666667](48.382140,57.460220)  circle (4.000000);
+		\draw[fill=black!85.333333](74.251830,58.769130)  circle (4.000000);
+		\draw[fill=black!84.000000](75.707639,4.000000)  circle (4.000000);
+		\draw[fill=black!81.333333](76.000000,14.501810)  circle (4.000000);
+		\draw[fill=black!84.000000](3.200000,49.064840)  circle (3.200000);
+		\draw[fill=black!97.333333](2.400000,12.742954)  circle (2.400000);
+		\draw[fill=black!94.666667](12.742954,2.400000)  circle (2.400000);
+		\draw[fill=black!90.666667](21.746111,77.600000)  circle (2.400000);
+		\draw[fill=black!90.666667](51.726190,6.482220)  circle (2.400000);
+		\draw[fill=black!96.000000](1.600000,43.363720)  circle (1.600000);
+		\draw[fill=black!90.666667](8.105040,52.214310)  circle (1.600000);
+		\draw[fill=black!89.333333](8.910315,78.400000)  circle (1.600000);
+		\draw[fill=black!85.333333](20.379400,60.273590)  circle (1.600000);
+		\draw[fill=black!82.666667](25.665295,78.400000)  circle (1.600000);
+		\draw[fill=black!100.000000](0.800000,0.800000)  circle (0.800000);
+		\draw[fill=black!100.000000](0.800000,8.719184)  circle (0.800000);
+		\draw[fill=black!100.000000](0.800000,15.514235)  circle (0.800000);
+		\draw[fill=black!90.666667](0.800000,19.867580)  circle (0.800000);
+		\draw[fill=black!88.000000](0.800000,18.267580)  circle (0.800000);
+		\draw[fill=black!84.000000](0.800000,39.332420)  circle (0.800000);
+		\draw[fill=black!80.000000](61.435530,37.495530)  circle (3.200000);
+		\draw[fill=black!68.000000](48.019370,3.432710)  circle (2.400000);
+		\draw[fill=black!78.666667](32.730760,76.873150)  circle (1.600000);
+		\draw[fill=black!77.333333](29.762170,78.067930)  circle (1.600000);
+		\draw[fill=black!76.000000](34.788160,60.608230)  circle (1.600000);
+		\draw[fill=black!73.333333](43.363720,1.600000)  circle (1.600000);
+		\draw[fill=black!68.000000](45.024590,77.084080)  circle (1.600000);
+		\draw[fill=black!70.666667](0.800000,40.932420)  circle (0.800000);
+		\draw[fill=black!32.000000](60.029850,44.556980)  circle (4.000000);
+		\draw[fill=black!32.000000](52.160260,52.294380)  circle (2.400000);
+		\draw[fill=black!32.000000](76.672410,34.419760)  circle (2.400000);
+		\draw[fill=black!29.333333](76.840420,52.915990)  circle (2.400000);
+		\draw[fill=black!25.333333](77.600000,21.746111)  circle (2.400000);
+		\draw[fill=black!21.333333](51.574813,1.600000)  circle (1.600000);
+		\draw[fill=black!33.333333](0.800000,45.626462)  circle (0.800000);
+		\draw[fill=black!26.666667](0.800000,52.264840)  circle (0.800000);
+		\draw[fill=black!24.000000](0.800000,53.864840)  circle (0.800000);
+		\draw[fill=black!24.000000](0.800000,55.464840)  circle (0.800000);
+		\draw[fill=black!24.000000](0.800000,57.064840)  circle (0.800000);
+		\draw[fill=black!13.333333](53.632730,60.800050)  circle (1.600000);
+		\draw[fill=black!13.333333](54.166290,48.833760)  circle (1.600000);
+		\draw[fill=black!9.333333](54.774813,1.600000)  circle (1.600000);
+		\draw[fill=black!9.333333](60.273590,20.379400)  circle (1.600000);
+		\draw[fill=black!8.000000](61.104665,78.400000)  circle (1.600000);
+		\draw[fill=black!4.000000](72.863380,53.343980)  circle (1.600000);
+		\draw[fill=black!2.666667](78.400000,8.910315)  circle (1.600000);
+		\draw[fill=black!18.666667](0.800000,72.129930)  circle (0.800000);
+		\draw[fill=black!17.333333](2.692770,71.089070)  circle (0.800000);
+		\draw[fill=black!16.000000](4.574710,10.395470)  circle (0.800000);
+		\draw[fill=black!12.000000](5.705240,52.183150)  circle (0.800000);
+		\draw[fill=black!8.000000](4.282700,52.915530)  circle (0.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,82.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!93.333333](29.600000,29.600000)  circle (29.600000);
+		\draw[fill=black!85.333333](8.000000,60.376614)  circle (8.000000);
+		\draw[fill=black!84.000000](18.995313,72.000000)  circle (8.000000);
+		\draw[fill=black!96.000000](58.797260,7.200000)  circle (7.200000);
+		\draw[fill=black!96.000000](65.157750,20.119140)  circle (7.200000);
+		\draw[fill=black!92.000000](72.800000,32.323894)  circle (7.200000);
+		\draw[fill=black!86.666667](72.800000,72.800000)  circle (7.200000);
+		\draw[fill=black!100.000000](33.306148,73.600000)  circle (6.400000);
+		\draw[fill=black!100.000000](41.337170,63.632910)  circle (6.400000);
+		\draw[fill=black!94.666667](52.503110,57.374950)  circle (6.400000);
+		\draw[fill=black!92.000000](59.223550,73.600000)  circle (6.400000);
+		\draw[fill=black!89.333333](60.773640,47.605680)  circle (6.400000);
+		\draw[fill=black!82.666667](5.600000,74.350657)  circle (5.600000);
+		\draw[fill=black!80.000000](72.000000,56.623930)  circle (8.000000);
+		\draw[fill=black!78.666667](72.373710,6.400000)  circle (6.400000);
+		\draw[fill=black!69.333333](4.800000,4.800000)  circle (4.800000);
+		\draw[fill=black!80.000000](27.047780,63.102930)  circle (4.000000);
+		\draw[fill=black!80.000000](43.425437,76.000000)  circle (4.000000);
+		\draw[fill=black!77.333333](61.011940,63.354910)  circle (4.000000);
+		\draw[fill=black!73.333333](62.301450,37.318510)  circle (4.000000);
+		\draw[fill=black!69.333333](70.203070,43.218670)  circle (4.000000);
+		\draw[fill=black!78.666667](3.200000,49.064840)  circle (3.200000);
+		\draw[fill=black!78.666667](19.195160,60.705940)  circle (3.200000);
+		\draw[fill=black!22.666667](75.672920,16.262820)  circle (4.000000);
+		\draw[fill=black!30.666667](49.064840,3.200000)  circle (3.200000);
+		\draw[fill=black!29.333333](52.278480,66.972330)  circle (3.200000);
+		\draw[fill=black!21.333333](76.645790,46.432920)  circle (3.200000);
+		\draw[fill=black!17.333333](2.400000,12.742954)  circle (2.400000);
+		\draw[fill=black!14.666667](12.742954,2.400000)  circle (2.400000);
+		\draw[fill=black!10.666667](46.778720,70.548800)  circle (2.400000);
+		\draw[fill=black!1.333333](61.571080,30.960310)  circle (2.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,164.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+		\draw[fill=black!84.057971](9.600000,63.314092)  circle (9.600000);
+		\draw[fill=black!81.159420](63.314092,9.600000)  circle (9.600000);
+		\draw[fill=black!81.159420](70.400000,70.400000)  circle (9.600000);
+		\draw[fill=black!78.260870](51.200000,70.400000)  circle (9.600000);
+		\draw[fill=black!82.608696](27.409670,67.937490)  circle (8.800000);
+		\draw[fill=black!81.159420](58.047440,54.186650)  circle (8.000000);
+		\draw[fill=black!73.913043](65.694700,40.132470)  circle (8.000000);
+		\draw[fill=black!78.260870](72.800000,23.465697)  circle (7.200000);
+		\draw[fill=black!81.159420](72.388240,52.882240)  circle (6.400000);
+		\draw[fill=black!34.782609](4.800000,4.800000)  circle (4.800000);
+		\draw[fill=black!20.289855](4.000000,75.707639)  circle (4.000000);
+		\draw[fill=black!13.043478](14.501810,76.000000)  circle (4.000000);
+		\draw[fill=black!11.594203](37.351296,76.000000)  circle (4.000000);
+		\draw[fill=black!10.144928](41.268520,61.108820)  circle (4.000000);
+		\draw[fill=black!8.695652](75.707639,4.000000)  circle (4.000000);
+		\draw[fill=black!18.840580](3.200000,49.064840)  circle (3.200000);
+		\draw[fill=black!17.391304](49.064840,3.200000)  circle (3.200000);
+		\draw[fill=black!17.391304](64.030730,29.056760)  circle (3.200000);
+		\draw[fill=black!7.246377](62.417450,22.863430)  circle (3.200000);
+		\draw[fill=black!2.898551](74.837990,33.664060)  circle (3.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,246.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+		\draw[fill=black!82.352941](6.400000,57.127441)  circle (6.400000);
+		\draw[fill=black!77.941176](6.400000,73.600000)  circle (6.400000);
+		\draw[fill=black!76.470588](16.198150,65.363720)  circle (6.400000);
+		\draw[fill=black!86.764706](24.094076,74.400000)  circle (5.600000);
+		\draw[fill=black!36.764706](38.758318,70.400000)  circle (9.600000);
+		\draw[fill=black!35.294118](54.704690,59.706390)  circle (9.600000);
+		\draw[fill=black!36.764706](61.878786,8.800000)  circle (8.800000);
+		\draw[fill=black!36.764706](65.007620,44.461400)  circle (8.800000);
+		\draw[fill=black!32.352941](67.918790,27.103830)  circle (8.800000);
+		\draw[fill=black!29.411765](69.073299,71.200000)  circle (8.800000);
+		\draw[fill=black!36.764706](71.932920,57.086780)  circle (5.600000);
+		\draw[fill=black!26.470588](4.800000,4.800000)  circle (4.800000);
+		\draw[fill=black!17.647059](52.334768,75.200000)  circle (4.800000);
+		\draw[fill=black!7.352941](74.011410,14.944880)  circle (4.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,328.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+		\draw[fill=black!22.666667](8.800000,60.639598)  circle (8.800000);
+		\draw[fill=black!33.333333](16.741535,73.600000)  circle (6.400000);
+		\draw[fill=black!33.333333](29.541535,73.600000)  circle (6.400000);
+		\draw[fill=black!28.000000](42.341535,73.600000)  circle (6.400000);
+		\draw[fill=black!33.333333](22.946660,63.328850)  circle (5.600000);
+		\draw[fill=black!25.333333](54.199213,5.600000)  circle (5.600000);
+		\draw[fill=black!1.333333](50.990530,60.139120)  circle (9.600000);
+		\draw[fill=black!14.666667](64.155480,16.003510)  circle (8.800000);
+		\draw[fill=black!10.666667](66.105710,33.495130)  circle (8.800000);
+		\draw[fill=black!8.000000](71.200000,50.341738)  circle (8.800000);
+		\draw[fill=black!18.666667](63.993588,72.000000)  circle (8.000000);
+		\draw[fill=black!17.333333](36.129830,63.332820)  circle (5.600000);
+		\draw[fill=black!12.000000](74.400000,5.600000)  circle (5.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,410.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+		\draw[fill=black!12.500000](8.000000,59.157866)  circle (8.000000);
+		\draw[fill=black!12.500000](17.543562,72.000000)  circle (8.000000);
+		\draw[fill=black!11.111111](33.543562,72.000000)  circle (8.000000);
+		\draw[fill=black!18.055556](44.321550,61.282020)  circle (7.200000);
+		\draw[fill=black!11.111111](52.964243,72.800000)  circle (7.200000);
+		\draw[fill=black!1.388889](55.810130,52.600280)  circle (7.200000);
+		\draw[fill=black!9.722222](66.540693,73.600000)  circle (6.400000);
+		\draw[fill=black!5.555556](73.600000,6.400000)  circle (6.400000);
+		\draw[fill=black!2.777778](73.600000,19.200000)  circle (6.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,492.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,574.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,656.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,738.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,820.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,902.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,984.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1066.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1148.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1230.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1312.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1394.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1476.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1558.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1640.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1722.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!89.333333](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!100.000000](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1804.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!85.915493](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!100.000000](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1886.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!100.000000](56.800000,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,1968.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!93.243243](56.800000,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2050.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!85.135135](56.800000,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2132.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!100.000000](59.200000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2214.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!93.442623](56.800000,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2296.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!97.333333](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2378.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!98.611111](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!100.000000](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2460.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!91.549296](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2542.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!91.176471](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2624.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!96.774194](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2706.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!98.648649](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2788.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!91.666667](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2870.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!91.803279](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,2952.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3034.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3116.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3198.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3280.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3362.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3444.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3526.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3608.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3690.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3772.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3854.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!40.677966](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,3936.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!30.909091](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4018.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!21.818182](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4100.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!20.370370](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4182.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!96.428571](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!100.000000](56.800000,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4264.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!93.333333](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4346.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!89.473684](53.933259,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4428.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!94.545455](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4510.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4592.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4674.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4756.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4838.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,4920.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5002.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5084.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5166.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5248.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5330.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+		\draw[fill=black!47.058824](57.600000,59.200000)  circle (20.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5412.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5494.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!76.000000](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5576.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!82.608696](53.933259,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5658.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!50.000000](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5740.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!29.411765](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5822.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!6.250000](56.000000,57.600000)  circle (22.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5904.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!72.222222](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,5986.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6068.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6150.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6232.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6314.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6396.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6478.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6560.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6642.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6724.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](29.600000,29.600000)  circle (29.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6806.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6888.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,6970.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7052.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7134.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7216.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7298.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7380.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7462.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.800000,28.800000)  circle (28.800000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7544.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7626.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7708.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7790.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7872.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](28.000000,28.000000)  circle (28.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,7954.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8036.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](27.200000,27.200000)  circle (27.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8118.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](26.400000,26.400000)  circle (26.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8200.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8282.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8364.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8446.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8528.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](25.600000,25.600000)  circle (25.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8610.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.800000,24.800000)  circle (24.800000);
+		\draw[fill=black!8.333333](56.800000,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8692.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+		\draw[fill=black!9.090909](53.933259,58.400000)  circle (21.600000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8774.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8856.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,8938.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,9020.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,9102.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](24.000000,24.000000)  circle (24.000000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,9184.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!100.000000](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,9266.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!90.909091](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,9348.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](23.200000,23.200000)  circle (23.200000);
+		\draw[fill=black!33.333333](56.800000,56.800000)  circle (23.200000);
+	\end{scope}
+\end{tikzpicture}

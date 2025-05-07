@@ -1,0 +1,19 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 120.000000);
+		\begin{scope}[shift={(0.000000,0.000000)}]
+			\draw (0,0) rectangle (80.000000, 84.000000);
+			\node at (1.5,1.5) {1};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (40.000000,84.000000);
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (32.000000,76.800000);
+			\draw[fill=lightgray, opacity=0.3] (43.200000, 0) rectangle (80.000000,64.800000);
+			\draw[fill=lightgray, opacity=0.3] (30.925454, 0) rectangle (62.925454,30.000000);
+			\draw[fill=lightgray, opacity=0.3] (56.477770, 0) rectangle (77.277770,16.800000);
+		\end{scope}
+		\begin{scope}[shift={(0.000000,84.000000)}]
+			\draw (0,0) rectangle (80.000000, 19.200000);
+			\node at (1.5,1.5) {2};
+			\draw[fill=lightgray, opacity=0.3] (0.000000, 0) rectangle (28.800000,19.200000);
+		\end{scope}
+	\end{scope}
+\end{tikzpicture}

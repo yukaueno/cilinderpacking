@@ -1,0 +1,78 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!67.346939](27.200000,27.200000)  circle (27.200000);
+		\node at (27.200000,27.200000) {1};
+		\draw[fill=gray!69.387755](52.498221,63.200000)  circle (16.800000);
+		\node at (52.498221,63.200000) {2};
+		\draw[fill=gray!100.000000](11.200000,62.107879)  circle (11.200000);
+		\node at (11.200000,62.107879) {3};
+		\draw[fill=gray!89.795918](62.107879,11.200000)  circle (11.200000);
+		\node at (62.107879,11.200000) {4};
+		\draw[fill=gray!87.755102](64.128160,37.729530)  circle (11.200000);
+		\node at (64.128160,37.729530) {5};
+		\draw[fill=gray!100.000000](26.174597,72.800000)  circle (7.200000);
+		\node at (26.174597,72.800000) {6};
+		\draw[fill=gray!77.551020](73.600000,52.563418)  circle (6.400000);
+		\node at (73.600000,52.563418) {7};
+		\draw[fill=gray!81.632653](4.000000,4.000000)  circle (4.000000);
+		\node at (4.000000,4.000000) {8};
+		\draw[fill=gray!57.142857](3.200000,45.859046)  circle (3.200000);
+		\node at (3.200000,45.859046) {9};
+		\draw[fill=gray!91.836735](2.400000,10.196773)  circle (2.400000);
+		\node at (2.400000,10.196773) {10};
+		\draw[fill=gray!69.387755](1.600000,40.393938)  circle (1.600000);
+		\node at (1.600000,40.393938) {11};
+		\draw[fill=gray!85.714286](0.800000,12.968055)  circle (0.800000);
+		\node at (0.800000,12.968055) {12};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!96.969697](26.400000,26.400000)  circle (26.400000);
+		\node at (26.400000,26.400000) {13};
+		\draw[fill=gray!93.939394](49.027417,63.200000)  circle (16.800000);
+		\node at (49.027417,63.200000) {14};
+		\draw[fill=gray!84.848485](11.200000,60.790696)  circle (11.200000);
+		\node at (11.200000,60.790696) {15};
+		\draw[fill=gray!100.000000](59.539704,10.400000)  circle (10.400000);
+		\node at (59.539704,10.400000) {16};
+		\draw[fill=gray!90.909091](25.140467,72.800000)  circle (7.200000);
+		\node at (25.140467,72.800000) {17};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!96.666667](25.600000,25.600000)  circle (25.600000);
+		\node at (25.600000,25.600000) {18};
+		\draw[fill=gray!100.000000](57.600000,59.200000)  circle (20.800000);
+		\node at (57.600000,59.200000) {19};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](24.800000,24.800000)  circle (24.800000);
+		\node at (24.800000,24.800000) {20};
+		\draw[fill=gray!70.833333](15.200000,63.630916)  circle (15.200000);
+		\node at (15.200000,63.630916) {21};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](24.800000,24.800000)  circle (24.800000);
+		\node at (24.800000,24.800000) {22};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!77.142857](23.200000,23.200000)  circle (23.200000);
+		\node at (23.200000,23.200000) {23};
+		\draw[fill=gray!100.000000](53.133259,57.600000)  circle (22.400000);
+		\node at (53.133259,57.600000) {24};
+	\end{scope}
+\end{tikzpicture}

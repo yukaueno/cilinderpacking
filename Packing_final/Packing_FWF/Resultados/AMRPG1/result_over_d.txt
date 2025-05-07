@@ -1,0 +1,27 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](3.200000,3.200000)  circle (3.200000);
+		\node at (3.200000,3.200000) {1};
+		\draw[fill=gray!74.000000](24.800000,24.800000)  circle (24.800000);
+		\node at (24.800000,24.800000) {2};
+		\draw[fill=gray!64.000000](9.600000,55.659682)  circle (9.600000);
+		\node at (9.600000,55.659682) {3};
+		\draw[fill=gray!60.000000](7.200000,72.287370)  circle (7.200000);
+		\node at (7.200000,72.287370) {4};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](28.000000,28.000000)  circle (28.000000);
+		\node at (28.000000,28.000000) {5};
+	\end{scope}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=gray!100.000000](26.400000,26.400000)  circle (26.400000);
+		\node at (26.400000,26.400000) {6};
+	\end{scope}
+\end{tikzpicture}

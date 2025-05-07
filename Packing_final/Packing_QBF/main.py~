@@ -1,0 +1,100 @@
+# Empacotamento de cilindros que considera a QUANTIDADE
+
+import packingcircle
+import packingretangule
+import ast
+import sys
+import time
+from itertools import accumulate, chain, repeat, tee
+
+# Le os dados
+def le_dados():
+
+	with open("Instancias/" + sys.argv[1], "rt") as fin:
+		with open("arquivo_novo.txt", "wt") as fout:
+			for line in fin:
+				fout.write(line.replace(';', ','))
+
+	lista = []
+
+	f= open("arquivo_novo.txt","r")
+
+	data = f.readlines()
+ 
+	for line in data:
+		lista.append(line.rstrip('\n'))
+
+	f.close()
+	return lista
+
+# Retirado de http://wordaligned.org/articles/slicing-a-list-evenly-with-python
+def chunk(xs, n):
+    assert n > 0
+    L = len(xs)
+    s, r = divmod(L, n)
+    widths = chain(repeat(s+1, r), repeat(s, n-r))
+    offsets = accumulate(chain((0,), widths))
+    b, e = tee(offsets)
+    next(e)
+    return [xs[s] for s in map(slice, b, e)]
+
+if __name__ == '__main__':
+
+	# Contando tempo de execucao
+	start_time = time.time()
+
+	# Pegando os dados do arquivo
+	lista = le_dados()
+
+	# Tamanho do Nivel
+	L = ast.literal_eval(lista[1])
+	W = ast.literal_eval(lista[2])
+	H = ast.literal_eval(lista[3])
+  
+	# Colocando os raios e alturas numa lista separada
+	lista_raio = ast.literal_eval(lista[4])
+	lista_altura_circulos = ast.literal_eval(lista[5])
+
+	# Ordenando a lista pela altura decrescente
+	lista_cilindro = sorted(zip(lista_raio, lista_altura_circulos), key=lambda cilindro: [cilindro[1],cilindro[0]], reverse=True)
+	#lista_cilindro = lista_cilindro[0:6]
+	# Auxiliar para indicar qual divisão usou menos recipientes
+	num_forno = None
+	num_nivel = None
+	aux = 1
+
+	f = open(sys.argv[1][:-4]+".txt", "a")
+	f.write("x,f,n\n")
+	
+	tam = len(lista_cilindro)
+	
+	# Calculando 10% de 7 a 12
+	#tam = int(len(lista_cilindro)*0.025)
+	#tam = [len(lista_cilindro)]
+	
+	for i in range(tam):
+		
+		lista_n = chunk(lista_cilindro, i+1)
+		lista_aux = []
+    
+		for pedaco in lista_n:
+			pedaco = sorted(pedaco,key=lambda cilindro: cilindro[0],reverse=True)
+			lista_aux.append(pedaco)
+		lista_aux = [col for row in lista_aux for col in row]
+		lista_nivel = packingcircle.empacota_circulos_m(L,W,lista_aux, sys.argv[1][:-4])
+		# Vamos calcular o numero de fornadas necessarias
+		lista_forno = packingretangule.coloca_forno_w(lista_nivel, H, L, W,sys.argv[1][:-4])
+
+		if  num_nivel == None or num_nivel > len(lista_nivel):
+			num_nivel = len(lista_nivel)
+      
+		if  num_forno == None or num_forno > len(lista_forno):
+			num_forno = len(lista_forno)
+			num_nivel1 = num_nivel
+			aux = i	
+
+		f.write("%d,%d,%d\n" % (i+1,len(lista_forno), len(lista_nivel)) )
+    
+	f.close()
+	print(sys.argv[1],"forno", num_forno," com ", num_nivel, " niveis", "dividimos em" , aux, " e o tempo de execucao eh ",(time.time() - start_time),"\n")
+  

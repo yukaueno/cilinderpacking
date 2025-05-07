@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=0.1]
+	\begin{scope}[shift={(0.000000,0.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](15.200000,15.200000)  circle (15.200000);
+		\draw[fill=black!98.305085](15.200000,64.800000)  circle (15.200000);
+		\draw[fill=black!62.711864](49.366650,19.200000)  circle (19.200000);
+		\draw[fill=black!59.322034](67.200000,45.770127)  circle (12.800000);
+		\draw[fill=black!15.254237](40.345974,69.600000)  circle (10.400000);
+	\end{scope}
+	\begin{scope}[shift={(0.000000,82.000000)}]
+		\draw (0,0) rectangle (80.000000, 80.000000);
+		\draw[fill=black!100.000000](16.800000,16.800000)  circle (16.800000);
+	\end{scope}
+\end{tikzpicture}

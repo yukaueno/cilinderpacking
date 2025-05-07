@@ -1,0 +1,130 @@
+# Vamso tentar compilar com mais de um arquivo
+
+# Vamos colocar os niveis pelo metodo best-first
+
+# Vamos ordenar os cilindros em altura, depois separar em uma certa faixa de alturas, e entre as faixas de alturas ordenamos pelo raio
+# Aqui temos um loop que faz todas as divisões possiveis
+
+# Empacotando os niveis em recipientes
+
+# Vamos fazer o caso do Best-First
+# Tentaremos colocar todos os niveis no Forno
+# E os niveis vao ser colocados na ordem que esta na lista_niveis 
+
+# Supomos que todos os cilindros não são maiores que o forno
+ 
+import packingcircle
+import packingretangule
+import ast
+import sys
+
+# Le os dados
+def le_dados():
+
+  with open("Instancias/" + sys.argv[1], "rt") as fin:
+    with open("arquivo_novo.txt", "wt") as fout:
+        for line in fin:
+            fout.write(line.replace(';', ','))
+
+  lista = []
+
+  f= open("arquivo_novo.txt","r")
+
+  data = f.readlines()
+ 
+  for line in data:
+    lista.append(line.rstrip('\n'))
+
+
+  f.close()
+
+
+  return lista
+
+def chunk(xs, n):
+  '''Split the list, xs, into n chunks'''
+  L = len(xs)
+  #print(L,n)
+  assert 0 < n <= L
+  s = L//n
+  return [xs[p:p+s] for p in range(0, L, s)]
+
+
+if __name__ == '__main__':
+
+  # Vamos so preencher um nivel ate ficar cheio
+
+  # Pegando os dados do arquivo
+  lista = le_dados()
+
+  # Tamanho do Nivel
+  L = ast.literal_eval(lista[1])
+  W = ast.literal_eval(lista[2])
+  H = ast.literal_eval(lista[3])
+  # Inicializando um nivel
+
+  #Lista de Circulos q vamos empacotar, no caso so precisamos dos raios
+  #lista_altura_circulos = [60,54,20,30,40]
+  #lista_raio = [10,9,10,5,7]
+  #lista_raios = [2,3,1]
+
+  lista_raio = ast.literal_eval(lista[4])
+  lista_altura_circulos = ast.literal_eval(lista[5])
+
+ 
+
+  #lista_cilindro = zip(lista_raio, lista_altura_circulos)
+
+  # Ordenando a lista pela altura decrescente
+  lista_cilindro = sorted(zip(lista_raio, lista_altura_circulos), key=lambda cilindro: [cilindro[1],cilindro[0]], reverse=True)
+  #print(lista_cilindro)
+
+  num_forno = None
+  num_nivel = None
+
+  aux = 1
+  for i in range(len(lista_cilindro)):
+    #print(i+1)
+    lista_n = chunk(lista_cilindro, i+1)
+    lista_aux = []
+
+    for pedaco in lista_n:
+      pedaco = sorted(pedaco,key=lambda cilindro: cilindro[0],reverse=True)
+      lista_aux.append(pedaco)
+
+    lista_aux = [col for row in lista_aux for col in row]
+    lista_nivel = packingcircle.empacota_circulos_m(L,W,lista_aux, sys.argv[1][:-4])
+    # Vamos calcular o numero de fornadas necessarias
+    lista_forno = packingretangule.coloca_forno_b(lista_nivel, H, L, W)
+
+    #if  num_forno == None or num_forno > len(lista_forno):
+      #num_forno = len(lista_forno)
+    
+    if  num_nivel == None or num_nivel > len(lista_nivel):
+      num_nivel = len(lista_nivel)
+      
+    if  num_forno == None or num_forno > len(lista_forno):
+      num_forno = len(lista_forno)
+      num_nivel1 = num_nivel
+      aux = i	
+        
+    #print("O numero de fonadas necessarias eh ", len(lista_forno)," com ",len(lista_nivel), " niveis","\n")
+  f = open("result.txt", "a")
+  f.write("%s forno %d com %d niveis %d partes \n" % (sys.argv[1],num_forno, num_nivel1, aux) )	
+  f.close()
+  print(sys.argv[1],"forno", num_forno," com ",num_nivel1, " niveis", "dividimos em" , aux,"\n")
+
+  #lista_n = chunk(lista_cilindro, aux+1)
+  #lista_aux = []
+
+  #for pedaco in lista_n:
+  #  pedaco = sorted(pedaco,key=lambda cilindro: cilindro[0],reverse=True)
+  #  lista_aux.append(pedaco)
+
+  #lista_aux = [col for row in lista_aux for col in row]
+  
+  #lista_nivel = packingcircle.empacota_circulos_m(L,W,lista_aux)
+  # Vamos calcular o numero de fornadas necessarias
+  #lista_forno = packingretangule.coloca_forno_b(lista_nivel, H, L, W)
+
+  

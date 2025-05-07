@@ -1,0 +1,60 @@
+##AMRM.dat : AMRM*.txt
+##	python3 main.py AMRM*.txt AMRM*.dat	
+.PHONY: test
+test: rm_result rm_dir mkdir_result
+#	@for n in $$(seq 1 3); do mkdir AMRM$$n; python3 main.py AMRM$$n.txt; done
+	mkdir Solucoes
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/AMRM$$n;\
+		python3 main.py AMRM$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/AMRPG$$n;\
+		python3 main.py AMRPG$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/AMRV$$n;\
+		python3 main.py AMRV$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/APGRM$$n;\
+		python3 main.py APGRM$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/APGRPG$$n;\
+		python3 main.py APGRPG$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/APGRV$$n;\
+		python3 main.py APGRV$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/AVRM$$n;\
+		python3 main.py AVRM$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/AVRPG$$n;\
+		python3 main.py AVRPG$$n.txt;\
+	done;
+
+	@for n in $$(seq 1 12); do\
+		mkdir Resultados/AVRV$$n;\
+		python3 main.py AVRV$$n.txt;\
+	done;
+
+rm_result:
+	rm -f result.txt result_detalhado.txt time.txt
+	
+mkdir_result:
+	mkdir Resultados
+	
+rm_dir:
+	rm -R -f Resultados
+	rm -R -f Solucoes
